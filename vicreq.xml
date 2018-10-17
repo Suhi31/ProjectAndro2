@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/back2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="15dp"
+                android:text="Name:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignTop="@+id/name1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/appicon" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="60dp"
+                android:text="Email:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/phn"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="105dp"
+                android:text="Phone no:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="150dp"
+                android:text="Type:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="225dp"
+                android:background="@drawable/button"
+                android:text="accept"
+
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/decline"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="225dp"
+                android:background="@drawable/button"
+                android:backgroundTint="#de5555"
+                android:text="decline"
+                android:textColor="@color/White" />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
