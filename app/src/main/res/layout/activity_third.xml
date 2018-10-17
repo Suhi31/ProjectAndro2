@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".third">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:layout_alignParentLeft="true">
+
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttonstyle"
+            android:text="SUBMIT"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:text="Registration"
+            android:textAlignment="center"
+            android:textColor="#033935"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="123dp"
+            android:text="First Name:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/n1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fname"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textCursorDrawable="@null"
+
+            />
+
+        <TextView
+            android:id="@+id/lname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/n2"
+            android:layout_alignLeft="@+id/fname"
+            android:layout_alignStart="@+id/fname"
+            android:text="Last Name:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/n2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/n1"
+            android:layout_alignStart="@+id/n1"
+            android:layout_below="@+id/n1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:id="@+id/mail2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/address"
+            android:layout_alignLeft="@+id/fname"
+            android:layout_alignStart="@+id/fname"
+            android:text="E-mail:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/n1"
+            android:layout_alignStart="@+id/n1"
+            android:layout_below="@+id/n2"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text=""
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:id="@+id/pass2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/fname"
+            android:layout_marginTop="271dp"
+            android:text="Password:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/fname"
+            android:layout_marginTop="321dp"
+            android:text="Phone Num:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignLeft="@+id/fname" />
+
+        <EditText
+            android:id="@+id/past"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pass2"
+            android:layout_alignLeft="@+id/n1"
+            android:layout_alignStart="@+id/n1"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@null" />
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/phone"
+            android:layout_alignLeft="@+id/n1"
+            android:layout_alignStart="@+id/n1"
+            android:ems="10"
+            android:inputType="phone"
+            android:textCursorDrawable="@null" />
+
+        <RadioGroup
+            android:id="@+id/rad"
+            android:layout_width="171dp"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/fname"
+            android:layout_marginBottom="85dp">
+
+            <RadioButton
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="USER"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/lawyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LAWYER"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/ngo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NGO"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/govt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="GOVT. ORG."
+                android:textStyle="bold" />
+        </RadioGroup>
+
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
